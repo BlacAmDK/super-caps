@@ -1,3 +1,9 @@
+! restore to default
+clear Lock
+clear Control
+add Lock = Caps_Lock
+add Control = Control_L
+add Control = Control_R
 !
 ! make caps_lock an additional control
 clear Lock
@@ -13,3 +19,6 @@ add Lock = Caps_Lock
 !
 ! make a fake escape key (so we can map it with xcape)
 keycode 999 = Escape
+
+! if script run more than once
+remove Lock = Escape
